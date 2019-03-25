@@ -87,7 +87,7 @@ Vue.component('select-district', {
             this.provinceId = provinceId;
             // 由于观察器的作用，这个时候城市列表已经变成了对应省的城市列表
             // 从当前城市列表找到与数组第二个元素同名的项的索引
-            const cityId = _.findKey(addressData[proinceId], o => o === value[1]);
+            const cityId = _.findKey(addressData[provinceId], o => o === value[1]);
             // 没找到，清空城市的值
             if (!cityId) {
                 this.cityId = '';
